@@ -6,7 +6,7 @@ import openai
 intents = discord.Intents.default()  # Default intents (typically enough for message sending/receiving)
 
 # Initialize OpenAI API
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Initialize Discord bot with intents
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -29,4 +29,4 @@ async def ask(ctx, *, prompt):
         await ctx.send(f"Error: {e}")
 
 # Run the bot
-bot.run('MTEzMzcxMjM2MzAxNTY0NzI2Nw.GJbRkz.xMGojLypbxNKOFqIQN7JkvBj8ZQLYpuNoWZdCg')
+bot.run('MTEzMzcxMjM2MzAxNTY0NzI2Nw.GR4hJ_.vAhsJUw1qmooZi1rF3gyXD42WWonhpI_A9_JkM')
