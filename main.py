@@ -29,4 +29,4 @@ async def ask(ctx, *, prompt):
         await ctx.send(f"Error: {e}")
 
 # Run the bot
-bot.run('MTEzMzcxMjM2MzAxNTY0NzI2Nw.GJbRkz.xMGojLypbxNKOFqIQN7JkvBj8ZQLYpuNoWZdCg')
+bot.run('DISCORD_TOKEN')
