@@ -1,31 +1,27 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: Run Python Script
 
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push to the main branch
+      - main
 
 jobs:
   run_script:
-    runs-on: ubuntu-latest  # The type of machine to run on
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2  # Ensure your repo content is checked out so your script can be accessed
+      uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Use Python 3.x, adjust as needed
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        # If you have a requirements.txt, uncomment the next line
-        # pip install -r requirements.txt
+        pip install -U pip
+        pip install discord.py
 
     - name: Run Python script
-      run: python main.py  # Adjust the path and script name accordingly
+      run: python main.py
