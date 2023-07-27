@@ -6,7 +6,7 @@ import openai
 intents = discord.Intents.default()  # Default intents (typically enough for message sending/receiving)
 
 # Initialize OpenAI API
-openai.api_key = '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'
+openai.api_key = 'OPENAI_KEY'
 
 # Initialize Discord bot with intents
 bot = commands.Bot(command_prefix='!', intents=intents)
