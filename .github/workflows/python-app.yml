@@ -28,4 +28,4 @@ jobs:
         # pip install -r requirements.txt
 
     - name: Run Python script
-      run: python https://github.com/Debonik/DiscordGPT.git  # Adjust the path and script name accordingly
+      run: python main.py  # Adjust the path and script name accordingly
