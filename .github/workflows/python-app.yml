@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -U pip
-        pip install discord.py
+        pip install discord.py openai
 
     - name: Run Python script
-      run: python main.py openai
+      run: python main.py
